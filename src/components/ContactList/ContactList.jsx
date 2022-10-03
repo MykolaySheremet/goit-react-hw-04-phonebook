@@ -2,6 +2,7 @@ import { ItemContacts, ListContacts } from './ContactList.styled';
 import PropTypes from 'prop-types';
 
 export const ContactList = ({ datacontacts, deleteContacts }) => {
+    // console.log('datacontacts',datacontacts);
     return (
         <ListContacts>
             {datacontacts.map(item => (
