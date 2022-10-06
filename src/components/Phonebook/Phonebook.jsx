@@ -79,7 +79,16 @@ export const Phonebook = () => {
     }
 
     const deleteContacts = (idDeleteContacts) => {
-        return setContacts(prevState => ({ contacts: prevState.contacts.filter(item => item.id !== idDeleteContacts)}));
+        // console.log(idDeleteContacts);
+        setContacts(contacts.filter((item) => item.id !== idDeleteContacts))
+        // setContacts(prevState => {
+        //     console.log(prevState);
+        //     console.log(contacts);
+        //     prevState.filter((item) => item.id !== idDeleteContacts)
+        // })
+
+        // return setContacts(prevState => (prevState.contacts.filter((item) => item.id !== idDeleteContacts)));
+        // return deleteContact;
         // this.setState(prevState => ({
         //     contacts: prevState.contacts.filter(item =>item.id !== idDeleteContacts )
     }
